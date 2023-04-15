@@ -13,9 +13,14 @@
     saltarLinea();
   }
 
+  function calcularIMC(peso,altura){
+    imc = peso / (altura**2)
+  }
+
   pesoChristian = 71;
   alturaChristian = 1.72;
-  imcChristian = Math.round(pesoChristian / (alturaChristian**2));
+  //imcChristian = Math.round(pesoChristian / (alturaChristian**2));
+  calcularIMC(pesoChristian, alturaChristian);
 
   imprimir("El IMC de Christian es de " + imcChristian);
 
