@@ -17,9 +17,10 @@
     return (peso / (altura**2));
   }
 
-  pesoInformado = prompt("Informe su peso");
-  alturaInformado = prompt("Informe su altura");
+  nombre = prompt("Ingrese su nombre");
+  pesoInformado = prompt(nombre + ", informe su peso");
+  alturaInformado = prompt(nombre + ", informe su altura");
   imcCalculado = Math.round(calcularIMC(pesoInformado,alturaInformado))
 
-  imprimir("La media calculada de IMC es " + imcCalculado + ".");
+  imprimir("El IMC de " nombre + " es " + imcCalculado + ".");
 </script>
