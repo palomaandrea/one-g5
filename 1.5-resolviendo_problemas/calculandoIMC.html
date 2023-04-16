@@ -13,11 +13,11 @@
     saltarLinea();
   }
 
-  function calcularIMC(peso,altura){
+  function calcularIMC(peso,altura,nombre){
     imc = Math.round(peso / (altura**2));
-    imprimir("El IMC calculado es " + imc);
+    imprimir("El IMC calculado de " + nombre+ " es " + imc);
   }
 
-  calcularIMC(71,1.72);
-  calcularIMC(75,1.73);
+  calcularIMC(71,1.72,"Christian");
+  calcularIMC(75,1.73,"Felipe");
 </script>
