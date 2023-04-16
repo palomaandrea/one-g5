@@ -13,11 +13,17 @@
     saltarLinea();
   }
 
-  var numeroPensado = Math.trunc(Math.random()*10);
-  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-9"));
+  function loteria(min,max){
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  var numeroPensado = loteria(0,10);
+  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
 
   if(numeroPensado == numeroLanzado){
-    imprimir("Usted acertó.");
+    imprimir("Usted acertó, ya que ingresó " + numeroPensado + ", el número elegido por la máquina.");
   }
 
   if(numeroPensado != numeroLanzado){
