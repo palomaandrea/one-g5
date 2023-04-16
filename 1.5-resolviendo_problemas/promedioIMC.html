@@ -1,0 +1,25 @@
+<meta charset="UTF-8" >
+<h1>MEDIA IMC</h1>
+
+<script>
+  function saltarLinea(){
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase){
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function calcularIMC(peso1,altura1,nombre1,peso2,altura2,nombre2){
+    imc1 = peso1 / (altura1**2);
+    imc2 = peso2 / (altura2**2);
+    promedioIMC = Math.round((imc1+imc2)/2);
+
+    imprimir("La media entre el IMC de "+nombre1+ " y el de "+nombre2+" es de "+promedioIMC+".");
+  }
+
+  calcularIMC(71,1.72,"Christian",75,1.73,"Felipe");
+</script>
