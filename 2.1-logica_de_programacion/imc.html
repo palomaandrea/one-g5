@@ -20,7 +20,7 @@
   nombre = prompt("Ingrese su nombre");
   pesoInformado = prompt(nombre + ", informe su peso");
   alturaInformado = prompt(nombre + ", informe su altura");
-  imcCalculado = Math.round(calcularIMC(pesoInformado,alturaInformado))
+  imcCalculado = calcularIMC(pesoInformado,alturaInformado)
 
   imprimir("El IMC de " + nombre + " es " + imcCalculado + ".");
 
