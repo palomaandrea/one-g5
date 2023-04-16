@@ -14,13 +14,13 @@
   }
 
   var numeroPensado = Math.trunc(Math.random()*10);
-  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-9"));
 
   if(numeroPensado == numeroLanzado){
-    imprimir("Usted acertó");
+    imprimir("Usted acertó.");
   }
 
-  if(numeroPensado){
+  if(numeroPensado != numeroLanzado){
     imprimir("Usted erró, el número pensado era " + numeroPensado + ".");
   }
 
