@@ -13,13 +13,13 @@
     saltarLinea();
   }
 
-  function calcularIMC(peso1,altura1,nombre1,peso2,altura2,nombre2){
-    imc1 = peso1 / (altura1**2);
-    imc2 = peso2 / (altura2**2);
-    promedioIMC = Math.round((imc1+imc2)/2);
-
-    imprimir("La media entre el IMC de "+nombre1+ " y el de "+nombre2+" es de "+promedioIMC+".");
+  function calcularIMC(peso,altura){
+    imc = peso / (altura**2);
+    return imc;
   }
 
-  calcularIMC(71,1.72,"Christian",75,1.73,"Felipe");
+  cons imcChristian = calcularIMC(71,1.72);
+  cons imcFelipe = calcularIMC(75,1.73);
+
+  imprimir("La media entre el IMC de Christian y Felipe es de " + (imcChristian+imcFelipe)/2;
 </script>
