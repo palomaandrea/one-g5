@@ -1,0 +1,54 @@
+<meta charset="UTF-8" >
+<h1>IMC</h1>
+
+<script>
+  function saltarLinea(){
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase){
+    document.write(frase);
+    saltarLinea();
+  }
+
+  function calcularIMC(peso,altura){
+    return (peso / (altura**2));
+  }
+
+  nombre = prompt("Ingrese su nombre");
+  pesoInformado = prompt(nombre + ", informe su peso");
+  alturaInformado = prompt(nombre + ", informe su altura");
+  imcCalculado = Math.round(calcularIMC(pesoInformado,alturaInformado))
+
+  imprimir("El IMC de " + nombre + " es " + imcCalculado + ".");
+
+  if (imcCalculado < 18.5){
+    imprimir("IMC por debajo de lo recomendado");
+  }
+
+  if (imcCalculado >= 18.5 && imcCalculado <= 24.9){
+    imprimir("IMC dentro del intervalo normal");
+  }
+
+  if (imcCalculado == 25){
+    imprimir("IMC indica sobrepeso");
+  }
+
+  if (imcCalculado > 25 && imcCalculado <= 29.9){
+    imprimir("IMC indica pre-obesidad");
+  }
+
+  if (imcCalculado >= 30 && imcCalculado <= 34.9){
+    imprimir("IMC indica Obesidad de clase 1");
+  }
+
+  if (imcCalculado >= 35 && imcCalculado <= 36.9){
+    imprimir("IMC indica Obesidad de clase 2");
+  }
+
+  if (imcCalculado >= 40){
+    imprimir("IMC indica Obesidad de clase 3");
+  }
+</script>
