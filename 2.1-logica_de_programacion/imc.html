@@ -25,30 +25,26 @@
   imprimir("El IMC de " + nombre + " es " + imcCalculado + ".");
 
   if (imcCalculado < 18.5){
-    imprimir("IMC por debajo de lo recomendado");
+    imprimir("IMC por debajo de lo recomendado según, indicaciones de OMS.");
   }
 
-  if (imcCalculado >= 18.5 && imcCalculado <= 24.9){
-    imprimir("IMC dentro del intervalo normal");
-  }
-
-  if (imcCalculado == 25){
-    imprimir("IMC indica sobrepeso");
+  if (imcCalculado >= 18.5 && imcCalculado <= 25){
+    imprimir("IMC dentro del intervalo normal, según indicaciones de OMS.");
   }
 
   if (imcCalculado > 25 && imcCalculado <= 29.9){
-    imprimir("IMC indica pre-obesidad");
+    imprimir("IMC indica peso dentro del intervalo normal pero con riesgo de pre-obesidad, según indicaciones de OMS.");
   }
 
   if (imcCalculado >= 30 && imcCalculado <= 34.9){
-    imprimir("IMC indica Obesidad de clase 1");
+    imprimir("IMC indica Obesidad de clase 1, según indicaciones de OMS.");
   }
 
   if (imcCalculado >= 35 && imcCalculado <= 36.9){
-    imprimir("IMC indica Obesidad de clase 2");
+    imprimir("IMC indica Obesidad de clase 2, según indicaciones de OMS.");
   }
 
   if (imcCalculado >= 40){
-    imprimir("IMC indica Obesidad de clase 3");
+    imprimir("IMC indica Obesidad de clase 3, según indicaciones de OMS.");
   }
 </script>
