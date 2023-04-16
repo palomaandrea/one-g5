@@ -13,4 +13,12 @@
     var edad = parseInt(prompt("¿Cuál es tu edad?"));
     var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
 
+    if(edad >= 18 && tieneLicencia == "S"){
+        imprimir("Usted es mayor de 18 y tiene licencia, por tanto puede conducir legalmente.")
+    }else if (edad < 18 && tieneLicencia == "S"){
+        imprimir("Usted no cumple con la edad requerida pero tiene licencia, puede conducir pero con un adulto responsable en el vehículo.")
+    }else{
+        imprimir("Usted no cumple con los requisitor para conducir. Favor regularice su situación y absténgase de manejar vehículos.")
+    }
+
 </script>
