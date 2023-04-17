@@ -1,5 +1,5 @@
 <meta charset="UTF-8" >
-<h1>Programa- Media de edades de una familia</h1>
+<h1>Programa- Números pares del 1 al 100</h1>
 
 <script>
   function saltarLinea(){
@@ -13,4 +13,15 @@
     saltarLinea();
   }
 
+  imprimir("WHILE");
+
+  var numero = 0;
+  var contador = 0;
+
+  while(numero < 100 ){
+    imprimir("Número " + (numero += 2));
+    contador++;
+  }
+
+  imprimir("FIN.");
 </script>
