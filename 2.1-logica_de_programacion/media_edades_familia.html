@@ -13,14 +13,22 @@
     saltarLinea();
   }
 
-  var edadPadre = 42;
-  var edadMadre = 38;
-  var edadHijo = 15;
-  var edadHija = 12;
+  var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miebros de su familia"));
+  var contador = 1;
+  var totalEdades = 0;
 
-  var totalEdad = edadPadre + edadMadre + edadHijo + edadHija;
+  while(contador <= numeroMiembros){
 
-  var mediaEdad = totalEdad/4;
+    edad = parseInt(prompt("Ingrese la edad del familiar"));
+    totalEdades += edad;
+    contador++;
 
-  imprimir("La media de las edades es " + mediaEdad + ".");
-  </script>
+  }
+
+  mediaEdades = Math.round(totalEdades/numeroMiembros);
+
+  imprimir("La familia tiene " + numeroMiembros + " integrantes.");
+  imprimir("La media entre todas las edades es " + mediaEdades + ".");
+  imprimir("La suma de todas las edades es " + totalEdades + ".");
+
+</script>
