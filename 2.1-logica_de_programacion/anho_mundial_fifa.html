@@ -14,36 +14,16 @@
   }
 
   var anhoMundial = 1930;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
+  var limite = parseInt(prompt("Ingrese el año límite para calcular"));
 
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
+  alert("El primer mundial de la FIFA se realizó el año " + anhoMundial);
 
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
+  while (anhoMundial < limite){
 
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
+      imprimir("Hubo Mundial de la FIFA en el año " + anhoMundial);
+      anhoMundial = anhoMundial + 4;
 
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
+  }
 
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
-  anhoMundial = anhoMundial + 4;
-  alert("Hubo Mundial de la FIFA en el año " + anhoMundial);
-
+  imprimir("Esos son todos los años en los que se realizó el Mundial, desde el comienzo en 1930 hasta el año " + limite + "." );
 </script>
