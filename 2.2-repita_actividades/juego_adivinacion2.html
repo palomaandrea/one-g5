@@ -13,23 +13,35 @@
     saltarLinea();
   }
 
-  function loteria(min,max){
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  var numeroPensado = Math.round(Math.random()*10);
+  var intentos = 5;
+  var contador = 1;
+
+  while(contador <= intentos){
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número del 1 al 10"));
+
+    if (numeroPensado == numeroLanzado){
+        alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
+    }else{
+        alert("Usted erró. ¡Inténtelo de nuevo!");
+    }
+
+    contador++;
+
   }
 
-  var numeroPensado = loteria(0,10);
-  var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+  if (numeroPensado == numeroLanzado){
+        alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
+    }else{
+        alert("Usted erró. ¡Inténtelo de nuevo!");
+    }
 
-  if(numeroPensado == numeroLanzado){
-    imprimir("Usted acertó, ya que ingresó " + numeroPensado + ", el número elegido por la máquina.");
+    contador++;
+
   }
 
-  if(numeroPensado != numeroLanzado && numeroPensado > numeroLanzado){
-    imprimir("Usted erró, el número pensado era " + numeroPensado + " que es mayor que " + numeroLanzado + ". ¡No te rindas, juega otra vez!");
-  }else if(numeroPensado != numeroLanzado && numeroPensado < numeroLanzado){
-    imprimir("Usted erró, el número pensado era " + numeroPensado + " que es menor que " + numeroLanzado + ". ¡No te rindas, juega otra vez!");
-  }
+
+  imprimir("¡Gracias por jugar!");
 
 </script>
