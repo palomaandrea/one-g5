@@ -17,12 +17,13 @@
   var intentos = 5;
   var contador = 1;
 
-  while(contador <= intentos){
+  while (contador <= intentos) {
 
     var numeroLanzado = parseInt(prompt("Ingrese un número del 1 al 10"));
 
     if (numeroPensado == numeroLanzado){
         alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
+        break;
     }else{
         alert("Usted erró. ¡Inténtelo de nuevo!");
     }
@@ -34,13 +35,10 @@
   if (numeroPensado == numeroLanzado){
         alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
     }else{
-        alert("Usted erró. ¡Inténtelo de nuevo!");
+        alert("Usted erró, el número pensado era " + numeroPensado + ". ¡Inténtelo de nuevo!");
     }
 
-    contador++;
-
   }
-
 
   imprimir("¡Gracias por jugar!");
 
