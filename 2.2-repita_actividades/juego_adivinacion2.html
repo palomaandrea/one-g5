@@ -22,7 +22,7 @@
     var numeroLanzado = parseInt(prompt("Ingrese un número del 1 al 10"));
 
     if (numeroPensado == numeroLanzado){
-        alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
+        alert("Usted acertó en el intento " + contador + ": ¡el número era " + numeroPensado + "!" );
         break;
     }else{
         alert("Usted erró. ¡Inténtelo de nuevo!");
@@ -33,7 +33,7 @@
   }
 
   if (numeroPensado == numeroLanzado){
-        alert("Usted acertó en el intento " + intento + ": ¡el número era " + numeroPensado + "!" );
+        imprimir("Usted acertó en el intento " + contador + ": ¡el número era " + numeroPensado + "!" );
     }else{
         alert("Usted erró, el número pensado era " + numeroPensado + ". ¡Inténtelo de nuevo!");
     }
